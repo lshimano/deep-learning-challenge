@@ -5,18 +5,19 @@ The purpose of this analysis is to use machine learning and neural networks to c
 o	Data Preprocessing
 * y or the target = is_successful
 * X or the features are all columns other than "is successful", so that would be ask_amt, sepcial_considerations, income_amt, status, organization, use_case, classification, affiliation, application_type, name, and EIN.
-EIN and NAME—Identification columns
-APPLICATION_TYPE—Alphabet Soup application type
-AFFILIATION—Affiliated sector of industry
-CLASSIFICATION—Government organisation classification
-USE_CASE—Use case for funding
-ORGANIZATION—Organisation type
-STATUS—Active status
-INCOME_AMT—Income classification
-SPECIAL_CONSIDERATIONS—Special considerations for application
-ASK_AMT—Funding amount requested
-IS_SUCCESSFUL—Was the money used effectively
 * EIN and NAME should be removed from the input data, particularly EIN because these are IDs and are unique variables.
+
+*EIN and NAME—Identification columns
+*APPLICATION_TYPE—Alphabet Soup application type
+*AFFILIATION—Affiliated sector of industry
+*CLASSIFICATION—Government organisation classification
+*USE_CASE—Use case for funding
+*ORGANIZATION—Organisation type
+*STATUS—Active status
+*INCOME_AMT—Income classification
+*SPECIAL_CONSIDERATIONS—Special considerations for application
+*ASK_AMT—Funding amount requested
+*IS_SUCCESSFUL—Was the money used effectively
   
 o	Compiling, Training, and Evaluating the Model
 * For the deep learning neural network model, I chose to use 2 hidden layers plus 1 output layer. For the first hidden layer, 80 neurons and relu activation function were used to capture a wide range of features and avoid vanishing gradient problem, for the second hidden layer, 30 neurons and relu activation were used to narrow down and refine the learned features to capture more complex data relationships for better performance, and for the output layer, 1 neuron and sigmoid activation function were used.
