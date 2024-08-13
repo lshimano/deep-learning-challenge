@@ -5,6 +5,17 @@ The purpose of this analysis is to use machine learning and neural networks to c
 o	Data Preprocessing
 * y or the target = is_successful
 * X or the features are all columns other than "is successful", so that would be ask_amt, sepcial_considerations, income_amt, status, organization, use_case, classification, affiliation, application_type, name, and EIN.
+EIN and NAME—Identification columns
+APPLICATION_TYPE—Alphabet Soup application type
+AFFILIATION—Affiliated sector of industry
+CLASSIFICATION—Government organisation classification
+USE_CASE—Use case for funding
+ORGANIZATION—Organisation type
+STATUS—Active status
+INCOME_AMT—Income classification
+SPECIAL_CONSIDERATIONS—Special considerations for application
+ASK_AMT—Funding amount requested
+IS_SUCCESSFUL—Was the money used effectively
 * EIN and NAME should be removed from the input data, particularly EIN because these are IDs and are unique variables.
   
 o	Compiling, Training, and Evaluating the Model
