@@ -8,7 +8,7 @@ o	Data Preprocessing
 * EIN and NAME should be removed from the input data, particularly EIN because these are IDs and are unique variables.
   
 o	Compiling, Training, and Evaluating the Model
-* For the deep learning neural network model, I chose to use 2 hidden layers plus 1 output layer. For the first hidden layer, 80 neurons and relu activation function were used to capture a wide range of features and avoid vanishing gradient problem, for the second hidden layer, 30 neurons and relu activation were used to narrow down and refine the learned features to capture more complex data relationships for better performance, and for the output layer, 1 neuron and sigmoid activation function were used. WHY
+* For the deep learning neural network model, I chose to use 2 hidden layers plus 1 output layer. For the first hidden layer, 80 neurons and relu activation function were used to capture a wide range of features and avoid vanishing gradient problem, for the second hidden layer, 30 neurons and relu activation were used to narrow down and refine the learned features to capture more complex data relationships for better performance, and for the output layer, 1 neuron and sigmoid activation function were used.
 * There were a few things I did to achieve the target model performance of higher than 75% accuracy:
   * Only drop the non-beneficial ID column, 'EIN'.
     application_df = application_df.drop(columns=['EIN'])
