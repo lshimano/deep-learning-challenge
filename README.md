@@ -15,24 +15,17 @@ o	Compiling, Training, and Evaluating the Model
   * Changed the random state from 1 to 30 for a different training/testing split result for better generalization and balance.
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=30)
   * Added in a third hidden layer to increase the capacity of the model to learn complex patterns; increased the number of neurons from 80 to 100 in the first hidden layer to capture     the different levels of abstraction of the data; changed the activation function from relu to sigmoid in the second hidden layer to stabilize learning in this specific data type.
-    #First hidden layer
+    #First hidden layer:
     nn.add(tf.keras.layers.Dense(units=100, activation='relu', input_dim=input_features))
     
-    #Second hidden layer
+    #Second hidden layer:
     nn.add(tf.keras.layers.Dense(units=30, activation='sigmoid'))
 
-    #Third hidden layer
+    #Third hidden layer:
     nn.add(tf.keras.layers.Dense(units=10, activation='sigmoid'))
 
-    #Output layer
+    #Output layer:
     nn.add(tf.keras.layers.Dense(units=1, activation='sigmoid'))
 
   # Summary
   In conclusion, with the optimization neural network method, the accuracy increased from 72.9% (with 55.5% loss) to 77.7% (with 50% loss). So with these carefully chosen new layers    and activation function, the deeper learning network now has a better generalization to new, unseen data, resulting in higher accuracy. The optimization model reduced overfitting,    focusing on meaningful patterns in the data and improving the capacity to learn complex relationships.
-
-
-
-  
-	72,8% and 0.55% loss
-
-
